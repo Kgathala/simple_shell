@@ -9,6 +9,7 @@ int _erratoi(char *s)
 {
 	int i = 0;
 	unsigned long int result = 0;
+
 	if (*s == '+')
 		s++;  /* TODO: why does this make main return 255? */
 	for (i = 0;  s[i] != '\0'; i++)
@@ -42,7 +43,7 @@ void print_error(info_t *info, char *estr)
 	_eputs(": ");
 	_eputs(estr);
 }
-/**
+**
  * print_d - function prints a decimal (integer) number (base 10)
  * @input: the input
  * @fd: the filedescriptor to write to
